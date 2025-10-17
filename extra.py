@@ -129,3 +129,4 @@ def create_widgets():
         tot_patient, patient_rate, avg_bill, avg_rate, avg_los, los_rate
     )
 
+

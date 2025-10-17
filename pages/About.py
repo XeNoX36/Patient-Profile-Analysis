@@ -57,12 +57,3 @@ with col2:
                       xaxis=dict(tickfont=dict(color="#474545"), title=dict(font=dict(color="#474545"))),
                       yaxis=dict(tickfont=dict(color="#474545"), title=dict(font=dict(color="#474545"))))
     st.plotly_chart(fig, use_container_width=True)
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-eimport pandas as pd
+import pandas as pd
 import streamlit as st
 import json
 import os
@@ -7,7 +7,7 @@ import os
 @st.cache_data
 def read_data():
     data = pd.read_csv(
-        r"Cleaned_healthcare.csv"
+        r"c:\Users\USER\Documents\CODES\Python Work to Do\Hospital Analysis\Cleaned_healthcare.csv"
     )
     return data
 
@@ -128,8 +128,3 @@ def create_widgets():
         colours, colours2, tot_bill, tot_patient, rev_rate,
         tot_patient, patient_rate, avg_bill, avg_rate, avg_los, los_rate
     )
-
-
-
-
-

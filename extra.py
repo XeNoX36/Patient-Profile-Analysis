@@ -125,8 +125,9 @@ def create_widgets():
 
     return (
         data, df1, df2, df3, df4, df5, df6, filtered_df,
-        colours, colours2, tot_bill, tot_patient, rev_rate,
+        colours, colours2, tot_bill, tot_patient, rev_rate, approx_val,
         tot_patient, patient_rate, avg_bill, avg_rate, avg_los, los_rate
     )
+
 
 

@@ -13,7 +13,7 @@ col1, col2 = st.columns([0.6, 0.4])
 # Medical Conditions and billing
 with col1:
     fig = px.bar(med_bill, x="Medical Condition", y="sum",  height=350, color="Medical Condition", color_discrete_sequence=colours2,
-                 text="Billing Amount Currency")
+                 text="sum")
     fig.update_traces(textposition="outside", textfont_color="black")
     fig.update_layout(paper_bgcolor="#ebe9e5", plot_bgcolor="#ebe9e5",
                       legend=dict(font=dict(color="#474545"), title=dict(font=dict(color="#474545"))),
@@ -57,6 +57,7 @@ with col2:
                       xaxis=dict(tickfont=dict(color="#474545"), title=dict(font=dict(color="#474545"))),
                       yaxis=dict(tickfont=dict(color="#474545"), title=dict(font=dict(color="#474545"))))
     st.plotly_chart(fig, use_container_width=True)
+
 
 
 

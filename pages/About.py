@@ -5,6 +5,7 @@ from extra import create_widgets
 # Data Analysis 2
 data, df1, df2, df3, df4, df5, df6, filtered_df, colours, colours2, tot_bill, tot_patient, rev_rate, tot_patient, patient_rate, avg_bill, avg_rate, avg_los, los_rate = create_widgets()
 med_bill = filtered_df.groupby('Medical Condition')["Billing Amount"].sum().reset_index(name='sum')
+med_bill["Billing Amount Currency"] = med_bill["Billing Amount"].apply.approx_val
 med_test = filtered_df.groupby('Medical Condition')["Test Results"].value_counts().reset_index(name='count')
 med_duration = filtered_df.groupby('Medical Condition')["Admission_Duration"].sum().reset_index(name='count')
 growth_trend = filtered_df.groupby('Year')["Medical Condition"].value_counts().reset_index(name='count')
@@ -57,3 +58,4 @@ with col2:
                       xaxis=dict(tickfont=dict(color="#474545"), title=dict(font=dict(color="#474545"))),
                       yaxis=dict(tickfont=dict(color="#474545"), title=dict(font=dict(color="#474545"))))
     st.plotly_chart(fig, use_container_width=True)
+

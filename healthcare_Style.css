@@ -1,0 +1,111 @@
+/*Tabs*/
+[data-testid="stToolbar"] {
+    background-color: white;
+    color: black;
+}
+/*Nav hover*/
+[data-testid="stTopNavLink"]{
+    background-color: #8dc2b1;
+    border-radius: 0px 10px 0px 10px;
+}
+[data-testid="stTopNavLink"]:hover{
+    background-color: #053829;
+}
+[data-testid="stTopNavLink"]:focus{
+    background-color: #053829;
+    border-radius: 10px;
+}
+[data-testid="stTopNavLink"]>span {
+    color: white;
+    padding: 0 10px;
+}
+[data-testid="stTopNavLink"]>span:hover {
+    background-color: #053829;
+    color: white;
+    border-radius: 0px 10px 0px 10px;
+}
+/*Tab-text underline*/
+div.st-ej.st-bt.st-eg {
+    background-color: purple;
+}
+/*Tab-Running icons*/
+[data-testid="stBaseButton-header"], [data-testid="stStatusWidgetRunningIcon"]>svg {
+    color: black;
+    border-color: black;
+}
+
+/*Body*/
+[data-testid="stMain"] {
+    background-color: white;
+    color: black;
+}
+
+/*Sidebar*/
+/*Sidebar-Content*/
+[data-testid="stSidebarContent"] {
+    background-color: #053829;
+    color: white;
+    border-right: solid 1px #cfffe6;
+}
+/*Sidebar-Height*/
+[data-testid="stSidebarHeader"] {
+    height: 17px;
+}
+/*Sidebar-collapse button*/
+button>span>[data-testid="stIconMaterial"] {
+    border: solid 3px 0 3px 3px white;
+    border-radius: 10px;
+    color: white;
+    background-color: #053829;
+}
+/*Sidebar-Header*/
+[data-testid="stHeading"]>[data-testid="stMarkdownContainer"]>h2 {
+    font-size: 16.7px;
+    text-align: center;
+    color: gold;
+}
+/*Sidebar-Labels*/
+[data-testid="stWidgetLabel"]>[data-testid="stMarkdownContainer"]>p {
+    color: white;
+}
+
+/*Metrics*/
+[data-testid="stMetric"] {
+    background-color: #053829;
+    box-shadow:0px 0px 2.5px#c5c5f0 inset;
+    border: 1px solid #053829;
+    padding: 5px 5px 5px 10px;
+    border-radius: 10px;
+}
+/*Metrics-Label*/
+[data-testid="stMetricLabel"] {
+    color: white;
+}
+/*Metrics-Tooltip icon [data-testid="stTooltip"]>[data-testid="stMarkdownContainer"]>p:hover*/
+div.stTooltipHoverTarget>svg {
+    background-color: white;
+    border-radius: 50px;
+}
+/*Metrics-Value*/
+[data-testid="stMetricValue"] {
+    color: white;
+    font-size: 27px;
+}
+/*Filter and Save Buttons*/
+[data-testid="stButton"]>[data-testid="stBaseButton-secondary"] {
+    background-color: #4e8d79;
+    border: solid 2px white;
+}
+[data-testid="stBaseButton-secondary"]>[data-testid="stMarkdownContainer"]>p {
+    font-size: 12px;
+}
+[data-testid="stButton"]>[data-testid="stBaseButton-secondary"]:hover {
+    background-color: #053829;
+    border: solid 3px #8dc2b1;
+}
+/*Plots*/
+svg.main-svg {
+    box-shadow:0px 0px 2.5px#ebe9e5 inset;
+    border: 1px solid #dddbd7;
+    border-radius: 10px;
+}
